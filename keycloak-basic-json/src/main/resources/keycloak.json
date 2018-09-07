@@ -1,0 +1,20 @@
+{
+  "realm" : "demo",
+  "resource" : "spring-boot-keycloak-app",
+  "auth-server-url" : "http://localhost:8180/auth",
+  "ssl-required" : "external",
+  "public-client" : true,
+  "use-resource-role-mappings": true,
+  "principal-attribute": "preferred_username",
+  "confidential-port" : 0,
+  "securityConstraints" : [
+    {
+      "authRoles" : [ "editor" ],
+      "securityCollections" : [
+        {
+          "patterns" : [ "/realm/1" ]
+        }
+      ]
+    }
+  ]
+}

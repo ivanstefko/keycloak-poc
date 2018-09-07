@@ -30,6 +30,7 @@
         <module>keycloak-basic</module>
         <module>keycloak-ldap-rest-api</module>
         <module>keycloak-multitenant</module>
+        <module>keycloak-basic-json</module>
     </modules>
 
     <!-- =========================================== -->
